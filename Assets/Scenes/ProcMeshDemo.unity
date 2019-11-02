@@ -565,5 +565,5 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cellSize: 1
-  gridOffset: {x: 4, y: 5, z: 6}
+  gridOffset: {x: 0, y: 0, z: 0}
   gridSize: 1

@@ -19,9 +19,15 @@ public class ProceduralGrid : MonoBehaviour
     private void Awake()
     {
         mesh = GetComponent<MeshFilter>().mesh;
+        InvokeRepeating("Expand", 2.0f, 1.0f);
     }
-    private void Start()
+    private void Expand()
     {
+        cellSize++;
+        gridSize++;
+    }
+    private void Update()
+    {        
         MakeContiguousProceduralGrid();
         UpdateMesh();
     }
