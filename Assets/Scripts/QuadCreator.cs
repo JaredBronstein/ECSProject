@@ -22,10 +22,10 @@ public class QuadCreator : MonoBehaviour
 
         var vertices = new Vector3[4]
         {
-            new Vector3(a,0,a),
-            new Vector3(a,0,-a),
-            new Vector3(-a,0,-a),
-            new Vector3(-a,0,a)
+            new Vector3(a,-1,a),
+            new Vector3(a,-1,-a),
+            new Vector3(-a,-1,-a),
+            new Vector3(-a,-1,a)
         };
         mesh.vertices = vertices;
 

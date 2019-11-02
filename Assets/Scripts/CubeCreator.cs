@@ -29,14 +29,14 @@ public class CubeCreator : MonoBehaviour
 
         var vertices = new Vector3[8]
 {
-            new Vector3(Xpos1,1,0),
-            new Vector3(Xpos2,1,0),
-            new Vector3(Xpos1,1,1),
-            new Vector3(Xpos2,1,1),
-            new Vector3(Xpos1,2,0),
-            new Vector3(Xpos2,2,0),
-            new Vector3(Xpos1,2,1),
-            new Vector3(Xpos2,2,1)
+            new Vector3(Xpos1,3,0),
+            new Vector3(Xpos2,3,0),
+            new Vector3(Xpos1,3,1),
+            new Vector3(Xpos2,3,1),
+            new Vector3(Xpos1,4,0),
+            new Vector3(Xpos2,4,0),
+            new Vector3(Xpos1,4,1),
+            new Vector3(Xpos2,4,1)
 };
         mesh.vertices = vertices;
 
