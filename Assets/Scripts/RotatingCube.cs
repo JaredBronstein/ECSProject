@@ -25,7 +25,7 @@ public class RotatingCube : MonoBehaviour
         Ypos[4] = Ypos[5] = Ypos[6] = Ypos[7] = 1;
         Zpos[0] = Zpos[1] = Zpos[4] = Zpos[5] = -1;
         Zpos[2] = Zpos[3] = Zpos[6] = Zpos[7] = 1;
-        Invoke("Delete", 3.0f);
+        Invoke("Delete", 2.0f);
     }
 
     void Update()
