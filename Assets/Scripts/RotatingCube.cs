@@ -9,6 +9,7 @@ public class RotatingCube : MonoBehaviour
     int[] tris;
     float temp1, temp2;
     float[] Xpos = new float[8], Ypos = new float[8], Zpos = new float[8];
+    private ParticleSystem ps;
 
     public double TurnSpeedX, TurnSpeedY, TurnSpeedZ;
 
@@ -18,7 +19,8 @@ public class RotatingCube : MonoBehaviour
     public float SpeedX, SpeedY, SpeedZ, Acceleration;
 
     private void Awake()
-    {       
+    {
+        ps = this.GetComponentInChildren<ParticleSystem>();
         Xpos[0] = Xpos[2] = Xpos[4] = Xpos[6] = -1;
         Xpos[1] = Xpos[3] = Xpos[5] = Xpos[7] = 1;
         Ypos[0] = Ypos[1] = Ypos[2] = Ypos[3] = -1;
@@ -30,6 +32,7 @@ public class RotatingCube : MonoBehaviour
 
     void Update()
     {
+        ps.transform.position = Center;
         Rotate();
         MakeMesh(Center);
         MoveCenter();
